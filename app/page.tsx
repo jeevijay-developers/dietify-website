@@ -48,8 +48,8 @@ export default function Home() {
         <section className="py-14 px-2 sm:py-24 sm:px-4 bg-white">
           <div className="mx-auto max-w-6xl">
             <div className="mb-8 text-center sm:mb-16">
-              <h2 className="text-2xl font-extrabold text-primary mb-2 sm:text-4xl sm:mb-4">About <span className="text-primary">DietMentor</span></h2>
-              <p className="text-[15px] text-foreground/70 text-center sm:text-lg max-w-md mx-auto">Personalized nutrition care that meets you where you are.</p>
+              <h2 className="text-2xl font-extrabold text-foreground mb-2 sm:text-4xl sm:mb-4">About <span className="text-primary">DietMentor</span></h2>
+              <p className="text-[13px] text-foreground/70 text-balance sm:text-lg">Personalized nutrition care that meets you where you are.</p>
             </div>
 
             <div className="flex flex-col gap-8 sm:gap-16 md:flex-row md:items-center">

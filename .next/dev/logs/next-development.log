@@ -1272,3 +1272,14 @@ the name `useRef` is defined multiple times
 [00:53:24.611] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services color: rgb(120, 120, 120) color: inherit {"dp":"/services","o":"http://localhost:3000/services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764239520537}
 [00:54:34.364] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764239590273}
 [00:57:36.569] Server  LOG      ✓ Compiled in 98ms
+[01:03:03.068] Server  LOG      ✓ Compiled in 191ms
+[01:06:45.450] Server  LOG      ✓ Compiled in 83ms
+[01:07:04.170] Server  LOG      ✓ Compiled in 76ms
+[01:07:07.512] Server  LOG      ✓ Compiled in 71ms
+[01:08:05.927] Server  LOG      ✓ Compiled in 52ms
+[01:08:48.749] Server  LOG      ✓ Compiled in 81ms
+[01:09:06.855] Server  LOG      ✓ Compiled in 48ms
+[01:09:49.161] Server  LOG      ✓ Compiled in 68ms
+[01:12:18.019] Server  LOG      ✓ Compiled in 279ms
+[01:15:57.256] Server  LOG      ✓ Compiled in 62ms
+[01:16:58.041] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764240933967}

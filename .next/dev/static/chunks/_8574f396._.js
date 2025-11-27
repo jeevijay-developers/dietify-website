@@ -19,10 +19,10 @@ function WhyChoose() {
             className: "max-w-6xl mx-auto",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mb-6 text-center sm:mb-16",
+                    className: "mb-8 text-center sm:mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-xl font-bold text-foreground mb-2 text-balance sm:text-4xl sm:mb-4",
+                            className: "text-2xl font-extrabold text-foreground mb-2 sm:text-4xl sm:mb-4",
                             children: [
                                 "Why Choose ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -30,8 +30,8 @@ function WhyChoose() {
                                     children: "DietMentor"
                                 }, void 0, false, {
                                     fileName: "[project]/components/why-choose.tsx",
-                                    lineNumber: 10,
-                                    columnNumber: 24
+                                    lineNumber: 9,
+                                    columnNumber: 103
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -44,7 +44,7 @@ function WhyChoose() {
                             children: "Expert nutritional guidance backed by scientific principles"
                         }, void 0, false, {
                             fileName: "[project]/components/why-choose.tsx",
-                            lineNumber: 12,
+                            lineNumber: 10,
                             columnNumber: 11
                         }, this)
                     ]
@@ -54,185 +54,185 @@ function WhyChoose() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid gap-8 sm:gap-12 md:grid-cols-2 items-center",
+                    className: "flex flex-col-reverse gap-8 sm:gap-12 md:grid md:grid-cols-2 items-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-6",
+                                className: "space-y-5",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex gap-4",
+                                        className: "flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                className: "w-6 h-6 text-primary shrink-0 mt-1"
+                                                className: "w-5 h-5 text-primary shrink-0 mt-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 20,
+                                                lineNumber: 16,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-semibold text-lg mb-1 text-foreground",
+                                                        className: "font-semibold text-base mb-1 text-foreground text-center sm:text-left",
                                                         children: "Disease-Specific Programs"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 22,
+                                                        lineNumber: 18,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-foreground/70",
+                                                        className: "text-[14px] text-foreground/70 text-center sm:text-left",
                                                         children: "Specialized diet plans for diabetes, PCOS, thyroid, and more"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 23,
+                                                        lineNumber: 19,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 21,
+                                                lineNumber: 17,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/why-choose.tsx",
-                                        lineNumber: 19,
+                                        lineNumber: 15,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex gap-4",
+                                        className: "flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                className: "w-6 h-6 text-primary shrink-0 mt-1"
+                                                className: "w-5 h-5 text-primary shrink-0 mt-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 27,
+                                                lineNumber: 23,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-semibold text-lg mb-1 text-foreground",
+                                                        className: "font-semibold text-base mb-1 text-foreground text-center sm:text-left",
                                                         children: "1-on-1 Consultations"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 29,
+                                                        lineNumber: 25,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-foreground/70",
+                                                        className: "text-[14px] text-foreground/70 text-center sm:text-left",
                                                         children: "Direct access to certified dieticians via online video calls"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 30,
+                                                        lineNumber: 26,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 28,
+                                                lineNumber: 24,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/why-choose.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 22,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex gap-4",
+                                        className: "flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                className: "w-6 h-6 text-primary shrink-0 mt-1"
+                                                className: "w-5 h-5 text-primary shrink-0 mt-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 34,
+                                                lineNumber: 30,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-semibold text-lg mb-1 text-foreground",
+                                                        className: "font-semibold text-base mb-1 text-foreground text-center sm:text-left",
                                                         children: "Ongoing Support"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 36,
+                                                        lineNumber: 32,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-foreground/70",
+                                                        className: "text-[14px] text-foreground/70 text-center sm:text-left",
                                                         children: "Regular follow-ups and plan adjustments based on your progress"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 37,
+                                                        lineNumber: 33,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 35,
+                                                lineNumber: 31,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/why-choose.tsx",
-                                        lineNumber: 33,
+                                        lineNumber: 29,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex gap-4",
+                                        className: "flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                className: "w-6 h-6 text-primary shrink-0 mt-1"
+                                                className: "w-5 h-5 text-primary shrink-0 mt-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 41,
+                                                lineNumber: 37,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-semibold text-lg mb-1 text-foreground",
+                                                        className: "font-semibold text-base mb-1 text-foreground text-center sm:text-left",
                                                         children: "Practical Meal Plans"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 43,
+                                                        lineNumber: 39,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-foreground/70",
+                                                        className: "text-[14px] text-foreground/70 text-center sm:text-left",
                                                         children: "Easy-to-follow recipes and shopping lists for real-world implementation"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/why-choose.tsx",
-                                                        lineNumber: 44,
+                                                        lineNumber: 40,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/why-choose.tsx",
-                                                lineNumber: 42,
+                                                lineNumber: 38,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/why-choose.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 36,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/why-choose.tsx",
-                                lineNumber: 18,
+                                lineNumber: 14,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/why-choose.tsx",
-                            lineNumber: 17,
+                            lineNumber: 13,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative h-56 sm:h-96 rounded-2xl overflow-hidden shadow-[0_30px_90px_rgba(11,94,60,0.18)]",
+                            className: "relative w-full h-52 sm:h-96 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(11,94,60,0.14)] mb-4 sm:mb-0",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/we01.jpg",
                                 alt: "Dietician consultation",
@@ -242,18 +242,18 @@ function WhyChoose() {
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/components/why-choose.tsx",
-                                lineNumber: 50,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/why-choose.tsx",
-                            lineNumber: 49,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/why-choose.tsx",
-                    lineNumber: 16,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this)
             ]
@@ -1441,24 +1441,24 @@ function Faqs() {
     _s();
     const [openIndex, setOpenIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-white px-4 py-24",
+        className: "bg-white px-2 py-14 sm:px-4 sm:py-24",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mx-auto max-w-5xl",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mb-6 text-center sm:mb-16",
+                    className: "mb-8 text-center sm:mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-xl font-bold text-foreground mb-2 text-balance sm:text-4xl sm:mb-4",
+                            className: "text-2xl font-extrabold text-foreground mb-2 sm:text-4xl sm:mb-4",
                             children: [
-                                "Questions?   ",
+                                "Questions? ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-primary",
                                     children: "We have answers."
                                 }, void 0, false, {
                                     fileName: "[project]/components/faqs.tsx",
-                                    lineNumber: 37,
-                                    columnNumber: 26
+                                    lineNumber: 36,
+                                    columnNumber: 103
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -1471,7 +1471,7 @@ function Faqs() {
                             children: "Everything you need to know before starting with DietMentor."
                         }, void 0, false, {
                             fileName: "[project]/components/faqs.tsx",
-                            lineNumber: 39,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this)
                     ]
@@ -1481,69 +1481,69 @@ function Faqs() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-4",
+                    className: "space-y-3 sm:space-y-4",
                     children: faqs.map((faq, index)=>{
                         const isOpen = openIndex === index;
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "w-full rounded-2xl border border-primary/10 bg-linear-to-br from-white to-primary/5 p-6 text-left shadow-[0_15px_45px_rgba(15,90,60,0.08)] transition-all hover:-translate-y-1",
+                            className: "w-full rounded-xl border border-primary/10 bg-linear-to-br from-white to-primary/5 p-4 sm:p-6 text-left shadow-[0_10px_30px_rgba(15,90,60,0.08)] transition-all hover:-translate-y-1",
                             onClick: ()=>setOpenIndex(isOpen ? -1 : index),
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between gap-6",
+                                className: "flex items-center justify-between gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-lg font-semibold text-foreground",
+                                                className: "text-base font-semibold text-foreground leading-snug sm:text-lg",
                                                 children: faq.question
                                             }, void 0, false, {
                                                 fileName: "[project]/components/faqs.tsx",
-                                                lineNumber: 55,
+                                                lineNumber: 51,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: `overflow-hidden transition-[max-height] duration-500 ease-in-out ${isOpen ? "max-h-40 mt-3" : "max-h-0"}`,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-foreground/70",
+                                                    className: "text-[14px] text-foreground/70 leading-relaxed sm:text-base",
                                                     children: faq.answer
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/faqs.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 57,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/faqs.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 52,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/faqs.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 50,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                         className: `h-5 w-5 text-primary transition-transform ${isOpen ? "rotate-180" : "rotate-0"}`
                                     }, void 0, false, {
                                         fileName: "[project]/components/faqs.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 60,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/faqs.tsx",
-                                lineNumber: 53,
+                                lineNumber: 49,
                                 columnNumber: 17
                             }, this)
                         }, faq.question, false, {
                             fileName: "[project]/components/faqs.tsx",
-                            lineNumber: 48,
+                            lineNumber: 44,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/components/faqs.tsx",
-                    lineNumber: 44,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this)
             ]
@@ -2040,7 +2040,7 @@ function Home() {
                                     className: "mb-8 text-center sm:mb-16",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "text-2xl font-extrabold text-primary mb-2 sm:text-4xl sm:mb-4",
+                                            className: "text-2xl font-extrabold text-foreground mb-2 sm:text-4xl sm:mb-4",
                                             children: [
                                                 "About ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2049,7 +2049,7 @@ function Home() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
                                                     lineNumber: 51,
-                                                    columnNumber: 99
+                                                    columnNumber: 102
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -2058,7 +2058,7 @@ function Home() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[15px] text-foreground/70 text-center sm:text-lg max-w-md mx-auto",
+                                            className: "text-[13px] text-foreground/70 text-balance sm:text-lg",
                                             children: "Personalized nutrition care that meets you where you are."
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
