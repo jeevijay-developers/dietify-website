@@ -1,5 +1,6 @@
+import Image from "next/image"
 import Link from "next/link"
-import { Leaf, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -8,9 +9,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Leaf className="w-6 h-6" />
-              <span className="font-bold text-lg">Dietify</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/dietmentor-logo.png"
+                width={180}
+                height={52}
+                alt="DietMentor nutrition and diet services"
+                className="h-12 w-auto object-contain"
+                priority={false}
+              />
+              <span className="sr-only">DietMentor</span>
             </div>
             <p className="text-primary-foreground/70 text-sm">Your personal online dietician for better health</p>
           </div>
@@ -43,7 +51,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2 text-primary-foreground/70">
                 <Phone className="w-4 h-4" />
-                <span>+91 (555) 123-4567</span>
+                <span>+91 9874563210</span>
               </div>
               <div className="flex items-center gap-2 text-primary-foreground/70">
                 <Mail className="w-4 h-4" />
@@ -51,7 +59,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2 text-primary-foreground/70">
                 <MapPin className="w-4 h-4" />
-                <span>New Delhi, India</span>
+                <span>Bihar, India</span>
               </div>
             </div>
           </div>

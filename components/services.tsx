@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Apple, Weight, Heart, Brain, Leaf } from "lucide-react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
 
 export default function Services() {
   const services = [
@@ -45,14 +47,44 @@ export default function Services() {
   return (
     <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Our Services</h2>
-          <p className="text-lg text-foreground/70 text-balance">
-            Comprehensive nutrition solutions for various health conditions
+        <div className="mb-6 text-center sm:mb-16">
+          <h2 className="text-xl font-bold text-foreground mb-2 text-balance sm:text-4xl sm:mb-4">
+            Our <span className="text-primary">Services</span>
+          </h2>
+          <p className="text-[13px] text-foreground/70 text-balance sm:text-lg">
+            Comprehensive nutrition solutions for various health conditions.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        {/* Mobile: Carousel */}
+        <div className="block md:hidden">
+          <Swiper
+            spaceBetween={16}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            style={{ paddingBottom: "2.5rem" }}
+          >
+            {services.map((service, i) => {
+              const Icon = service.icon
+              return (
+                <SwiperSlide key={i}>
+                  <div className="rounded-2xl border border-white/80 bg-white/95 p-4 text-center shadow-[0_8px_20px_rgba(28,199,141,0.10)] backdrop-blur-sm max-w-xs mx-auto group">
+                    <Icon className={`h-9 w-9 ${service.color} mb-3 group-hover:scale-110 transition-transform`} />
+                    <h3 className="text-base font-semibold text-foreground mb-2">{service.title}</h3>
+                    <p className="text-xs text-foreground/70 mb-4">{service.description}</p>
+                    <Link href="/services">
+                      <Button variant="ghost" className="text-primary hover:bg-primary/10 text-xs px-3 py-1">
+                        Learn More →
+                      </Button>
+                    </Link>
+                  </div>
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
+        </div>
+        {/* Desktop: Grid */}
+        <div className="hidden md:grid md:grid-cols-3 gap-6">
           {services.map((service, i) => {
             const Icon = service.icon
             return (

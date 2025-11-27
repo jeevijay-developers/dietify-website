@@ -1,8 +1,9 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X, Leaf } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Navigation() {
@@ -10,6 +11,7 @@ export default function Navigation() {
 
   const navItems = [
     { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Book Appointment", href: "/book" },
     { label: "Contact", href: "/#contact" },
@@ -18,9 +20,16 @@ export default function Navigation() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-2">
-          <Leaf className="w-8 h-8 text-primary" />
-          <span className="font-bold text-xl text-foreground">Dietify</span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/dietmentor-logo.png"
+            width={220}
+            height={64}
+            priority
+            alt="DietMentor nutrition and diet services"
+            className="h-14 w-auto object-contain"
+          />
+          <span className="sr-only">DietMentor</span>
         </Link>
 
         {/* Desktop Menu */}
