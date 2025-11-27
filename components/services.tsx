@@ -52,7 +52,7 @@ export default function Services() {
             Our <span className="text-primary">Services</span>
           </h2>
           <p className="text-[13px] text-foreground/70 text-balance sm:text-lg">
-            Comprehensive nutrition solutions for various health conditions.
+            Comprehensive nutrition solutions for various health conditions..
           </p>
         </div>
 
