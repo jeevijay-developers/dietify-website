@@ -1,11 +1,61 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
-import PackageCard from "@/components/package-card"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+
+"use client";
+
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
+import PackageCard from "@/components/package-card";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import "keen-slider/keen-slider.min.css";
+import { useRef, useEffect } from "react";
+
+type Package = {
+  name: string;
+  duration: string;
+  price: string;
+  includes: string[];
+};
+
+type Section = {
+  category: string;
+  packages: Package[];
+};
+
+type KeenSliderCarouselProps = {
+  items: Package[];
+};
+
+function KeenSliderCarousel({ items }: KeenSliderCarouselProps) {
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    let slider: any = null;
+    if (sliderRef.current) {
+      import("keen-slider").then((mod) => {
+        if (mod && mod.default) {
+          slider = new mod.default(sliderRef.current!, {
+            slides: { perView: 1, spacing: 16 },
+            loop: true,
+          });
+        }
+      });
+    }
+    return () => {
+      if (slider && typeof slider.destroy === "function") slider.destroy();
+    };
+  }, []);
+  return (
+    <div ref={sliderRef} className="keen-slider">
+      {items.map((pkg, idx) => (
+        <div className="keen-slider__slide" key={idx}>
+          <PackageCard {...pkg} />
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function Services() {
-  const packages = [
+  const packages: Section[] = [
     {
       category: "Weight Loss",
       packages: [
@@ -86,25 +136,28 @@ export default function Services() {
         },
       ],
     },
-  ]
-
+  ];
+        // ...existing code for packages array...
   return (
     <>
       <Navigation />
       <main>
-        <section className="py-16 px-4 bg-gradient-to-br from-background to-secondary/5">
+        <section className="py-16 px-4 bg-linear-to-br from-background to-secondary/5">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-foreground mb-6 text-balance">Our Packages & Programs</h1>
-            <p className="text-xl text-foreground/70 text-balance">Choose the perfect program for your health goals</p>
+            <h1 className="text-5xl font-bold text-foreground mb-6 text-balance text-center">Our Packages & Programs</h1>
+            <p className="text-xl text-foreground/70 text-balance text-center">Choose the perfect program for your health goals</p>
           </div>
         </section>
 
         {packages.map((section, i) => (
           <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-foreground mb-12 text-balance">{section.category}</h2>
-
-              <div className="grid md:grid-cols-3 gap-8">
+              <h2 className="text-3xl font-bold text-foreground mb-12 text-balance text-center">{section.category}</h2>
+              {/* Carousel for mobile, grid for desktop */}
+              <div className="block md:hidden">
+                <KeenSliderCarousel items={section.packages} />
+              </div>
+              <div className="hidden md:grid md:grid-cols-3 gap-8">
                 {section.packages.map((pkg, j) => (
                   <PackageCard key={j} {...pkg} />
                 ))}
@@ -126,5 +179,6 @@ export default function Services() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
+// ...end of file, no extra closing brace...

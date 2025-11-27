@@ -1,24 +1,1249 @@
-[00:00:01.371] Server  WARN     ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 5.0.2
-[00:00:01.668] Server  LOG      ✓ Ready in 1082ms
-[00:00:04.997] Server  LOG      ○ Compiling / ...
-[00:00:07.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.064] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.064] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:08.064] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764233670389}
-[00:05:29.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:30.349] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:05:30.349] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:05:30.349] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764233992672}
-[00:06:00.145] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/book color: rgb(120, 120, 120) color: inherit {"dp":"/book","o":"http://localhost:3000/book","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764234022467}
-[00:06:12.984] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764234035269}
-[00:09:57.774] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:58.504] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:09:58.504] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:09:58.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764234260827}
-[00:14:04.653] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:05.333] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:14:05.333] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:14:05.333] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764234507655}
-[00:18:01.305] Server  LOG      ✓ Compiled in 243ms
-[00:27:03.323] Server  LOG      ✓ Compiled in 96ms
-[00:28:01.089] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services color: rgb(120, 120, 120) color: inherit {"dp":"/services","o":"http://localhost:3000/services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764235343402}
+[00:00:01.486] Server  LOG      ✓ Ready in 954ms
+[00:00:24.152] Server  LOG      ○ Compiling / ...
+[00:00:25.985] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:26.322] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:26.322] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:26.322] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764236342254}
+[00:00:28.874] Server  ERROR    ⨯ ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:8:10
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:00:29.009] Browser ERROR   ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:29.010] Browser ERROR   ./app/services/page.tsx:8:10
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:29.877] Browser ERROR   ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:29.877] Browser ERROR   ./app/services/page.tsx:8:10
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:29.877] Browser ERROR   ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:29.877] Browser ERROR   ./app/services/page.tsx:8:10
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:30.357] Server  ERROR    ⨯ ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:8:10
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:00:30.595] Browser ERROR   uncaughtError: Error: ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:00:30.714] Browser ERROR   ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:30.714] Browser ERROR   ./app/services/page.tsx:8:10
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:30.839] Browser ERROR   ./app/services/page.tsx:8:18
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:00:30.839] Browser ERROR   ./app/services/page.tsx:8:10
+Ecmascript file had an error
+   6 | import { Button } from "@/components/ui/button"
+   7 | import "keen-slider/keen-slider.min.css"
+>  8 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   9 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+  10 |
+  11 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:01:21.100] Browser ERROR   ./app/services/page.tsx:14:5
+Parsing ecmascript source code failed
+  12 |   const packages = [
+  13 |     "use client"
+> 14 |     {
+     |     ^
+  15 |       category: "Weight Loss",
+  16 |       packages: [
+  17 |         {
+
+Expected ',', got '{'
+[00:01:50.415] Server  ERROR    ⨯ ./app/services/page.tsx:14:5
+Parsing ecmascript source code failed
+  12 |   const packages = [
+  13 |     "use client"
+> 14 |     {
+     |     ^
+  15 |       category: "Weight Loss",
+  16 |       packages: [
+  17 |         {
+
+Expected ',', got '{'
+
+
+[00:01:50.661] Browser ERROR   uncaughtError: Error: ./app/services/page.tsx:14:5
+Parsing ecmascript source code failed
+  12 |   const packages = [
+  13 |     "use client"
+> 14 |     {
+     |     ^
+  15 |       category: "Weight Loss",
+  16 |       packages: [
+  17 |         {
+
+Expected ',', got '{'
+
+
+[00:01:50.823] Browser ERROR   ./app/services/page.tsx:14:5
+Parsing ecmascript source code failed
+  12 |   const packages = [
+  13 |     "use client"
+> 14 |     {
+     |     ^
+  15 |       category: "Weight Loss",
+  16 |       packages: [
+  17 |         {
+
+Expected ',', got '{'
+[00:01:50.823] Browser ERROR   ./app/services/page.tsx:14:5
+Parsing ecmascript source code failed
+  12 |   const packages = [
+  13 |     "use client"
+> 14 |     {
+     |     ^
+  15 |       category: "Weight Loss",
+  16 |       packages: [
+  17 |         {
+
+Expected ',', got '{'
+[00:02:20.104] Browser ERROR   ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:20.105] Browser ERROR   ./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:29.158] Server  ERROR    ⨯ ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:02:29.348] Browser ERROR   uncaughtError: Error: ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:02:29.520] Browser ERROR   ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:29.520] Browser ERROR   ./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:29.520] Browser ERROR   ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:29.520] Browser ERROR   ./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:31.798] Server  ERROR    ⨯ ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:02:32.000] Browser ERROR   uncaughtError: Error: ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:02:32.174] Browser ERROR   ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:32.174] Browser ERROR   ./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:32.174] Browser ERROR   ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:32.174] Browser ERROR   ./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:33.740] Server  ERROR    ⨯ ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:02:33.938] Browser ERROR   uncaughtError: Error: ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:02:34.112] Browser ERROR   ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:34.112] Browser ERROR   ./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:34.112] Browser ERROR   ./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:02:34.112] Browser ERROR   ./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | export default function Services() {
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:03:10.096] Browser ERROR   ./app/services/page.tsx:12:17
+Parsing ecmascript source code failed
+  10 | export default function Services() {
+  11 |   const packages: Section[] = [
+> 12 |     "use client";
+     |                 ^
+  13 |     {
+  14 |       category: "Weight Loss",
+  15 |       packages: [
+
+Expected ',', got ';'
+[00:04:06.102] Browser ERROR   ./app/services/page.tsx:148:9
+Parsing ecmascript source code failed
+  146 |     },
+  147 |   ];
+> 148 |         </section>
+      |         ^
+  149 |
+  150 |           {packages.map((section, i) => (
+  151 |             <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+
+Expression expected
+[00:04:06.102] Browser ERROR   ./app/services/page.tsx:148:10
+Parsing ecmascript source code failed
+  146 |     },
+  147 |   ];
+> 148 |         </section>
+      |          ^^^^^^^^^
+  149 |
+  150 |           {packages.map((section, i) => (
+  151 |             <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+
+Unterminated regexp literal
+[00:04:07.187] Browser ERROR   ./app/services/page.tsx:148:9
+Parsing ecmascript source code failed
+  146 |     },
+  147 |   ];
+> 148 |         </section>
+      |         ^
+  149 |
+  150 |           {packages.map((section, i) => (
+  151 |             <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+
+Expression expected
+[00:04:07.187] Browser ERROR   ./app/services/page.tsx:148:10
+Parsing ecmascript source code failed
+  146 |     },
+  147 |   ];
+> 148 |         </section>
+      |          ^^^^^^^^^
+  149 |
+  150 |           {packages.map((section, i) => (
+  151 |             <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+
+Unterminated regexp literal
+[00:04:53.107] Browser ERROR   ./app/services/page.tsx:148:9
+Parsing ecmascript source code failed
+  146 |     },
+  147 |   ];
+> 148 |         </section>
+      |         ^
+  149 |
+  150 |           {packages.map((section, i) => (
+  151 |             <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+
+Expression expected
+[00:04:53.107] Browser ERROR   ./app/services/page.tsx:148:10
+Parsing ecmascript source code failed
+  146 |     },
+  147 |   ];
+> 148 |         </section>
+      |          ^^^^^^^^^
+  149 |
+  150 |           {packages.map((section, i) => (
+  151 |             <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+
+Unterminated regexp literal
+[00:09:38.103] Browser ERROR   ./app/services/page.tsx:192:3
+Parsing ecmascript source code failed
+  190 |   );
+  191 | }
+> 192 |   }
+      |   ^
+  193 |
+
+Expression expected
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:10:1
+Ecmascript file had an error
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+> 10 | "use client";
+     | ^^^^^^^^^^^^^
+  11 |
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:16:10
+Ecmascript file had an error
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+> 16 | import { Button } from "@/components/ui/button";
+     |          ^^^^^^
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+  19 |
+
+the name `Button` is defined multiple times
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:13:8
+Ecmascript file had an error
+  11 |
+  12 | import Navigation from "@/components/navigation";
+> 13 | import Footer from "@/components/footer";
+     |        ^^^^^^
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+
+the name `Footer` is defined multiple times
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:15:8
+Ecmascript file had an error
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+> 15 | import Link from "next/link";
+     |        ^^^^
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+
+the name `Link` is defined multiple times
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:12:8
+Ecmascript file had an error
+  10 | "use client";
+  11 |
+> 12 | import Navigation from "@/components/navigation";
+     |        ^^^^^^^^^^
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+
+the name `Navigation` is defined multiple times
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:14:8
+Ecmascript file had an error
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+> 14 | import PackageCard from "@/components/package-card";
+     |        ^^^^^^^^^^^
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+
+the name `PackageCard` is defined multiple times
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useEffect` is defined multiple times
+[00:09:45.104] Browser ERROR   ./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useRef` is defined multiple times
+[00:09:56.535] Server  ERROR    ⨯ ./app/services/page.tsx:10:1
+Ecmascript file had an error
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+> 10 | "use client";
+     | ^^^^^^^^^^^^^
+  11 |
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+
+./app/services/page.tsx:7:18
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |                  ^^^^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | "use client";
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:7:10
+Ecmascript file had an error
+   5 | import { Button } from "@/components/ui/button"
+   6 | import "keen-slider/keen-slider.min.css"
+>  7 | import { useRef, useEffect } from "react"
+     |          ^^^^^^
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+  10 | "use client";
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/services/page.tsx:16:10
+Ecmascript file had an error
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+> 16 | import { Button } from "@/components/ui/button";
+     |          ^^^^^^
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+  19 |
+
+the name `Button` is defined multiple times
+
+
+
+./app/services/page.tsx:13:8
+Ecmascript file had an error
+  11 |
+  12 | import Navigation from "@/components/navigation";
+> 13 | import Footer from "@/components/footer";
+     |        ^^^^^^
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+
+the name `Footer` is defined multiple times
+
+
+
+./app/services/page.tsx:15:8
+Ecmascript file had an error
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+> 15 | import Link from "next/link";
+     |        ^^^^
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+
+the name `Link` is defined multiple times
+
+
+
+./app/services/page.tsx:12:8
+Ecmascript file had an error
+  10 | "use client";
+  11 |
+> 12 | import Navigation from "@/components/navigation";
+     |        ^^^^^^^^^^
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+
+the name `Navigation` is defined multiple times
+
+
+
+./app/services/page.tsx:14:8
+Ecmascript file had an error
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+> 14 | import PackageCard from "@/components/package-card";
+     |        ^^^^^^^^^^^
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+
+the name `PackageCard` is defined multiple times
+
+
+
+./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useEffect` is defined multiple times
+
+
+
+./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useRef` is defined multiple times
+
+
+[00:09:56.844] Browser ERROR   uncaughtError: Error: ./app/services/page.tsx:10:1
+Ecmascript file had an error
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+> 10 | "use client";
+     | ^^^^^^^^^^^^^
+  11 |
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:10:1
+Ecmascript file had an error
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+> 10 | "use client";
+     | ^^^^^^^^^^^^^
+  11 |
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:16:10
+Ecmascript file had an error
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+> 16 | import { Button } from "@/components/ui/button";
+     |          ^^^^^^
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+  19 |
+
+the name `Button` is defined multiple times
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:13:8
+Ecmascript file had an error
+  11 |
+  12 | import Navigation from "@/components/navigation";
+> 13 | import Footer from "@/components/footer";
+     |        ^^^^^^
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+
+the name `Footer` is defined multiple times
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:15:8
+Ecmascript file had an error
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+> 15 | import Link from "next/link";
+     |        ^^^^
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+
+the name `Link` is defined multiple times
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:12:8
+Ecmascript file had an error
+  10 | "use client";
+  11 |
+> 12 | import Navigation from "@/components/navigation";
+     |        ^^^^^^^^^^
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+
+the name `Navigation` is defined multiple times
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:14:8
+Ecmascript file had an error
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+> 14 | import PackageCard from "@/components/package-card";
+     |        ^^^^^^^^^^^
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+
+the name `PackageCard` is defined multiple times
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useEffect` is defined multiple times
+[00:09:57.059] Browser ERROR   ./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useRef` is defined multiple times
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:10:1
+Ecmascript file had an error
+   8 | import { KeenSliderInstance, KeenSliderPlugin } from "keen-slider"
+   9 |
+> 10 | "use client";
+     | ^^^^^^^^^^^^^
+  11 |
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:16:10
+Ecmascript file had an error
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+> 16 | import { Button } from "@/components/ui/button";
+     |          ^^^^^^
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+  19 |
+
+the name `Button` is defined multiple times
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:13:8
+Ecmascript file had an error
+  11 |
+  12 | import Navigation from "@/components/navigation";
+> 13 | import Footer from "@/components/footer";
+     |        ^^^^^^
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+
+the name `Footer` is defined multiple times
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:15:8
+Ecmascript file had an error
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+> 15 | import Link from "next/link";
+     |        ^^^^
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+  18 | import { useRef, useEffect } from "react";
+
+the name `Link` is defined multiple times
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:12:8
+Ecmascript file had an error
+  10 | "use client";
+  11 |
+> 12 | import Navigation from "@/components/navigation";
+     |        ^^^^^^^^^^
+  13 | import Footer from "@/components/footer";
+  14 | import PackageCard from "@/components/package-card";
+  15 | import Link from "next/link";
+
+the name `Navigation` is defined multiple times
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:14:8
+Ecmascript file had an error
+  12 | import Navigation from "@/components/navigation";
+  13 | import Footer from "@/components/footer";
+> 14 | import PackageCard from "@/components/package-card";
+     |        ^^^^^^^^^^^
+  15 | import Link from "next/link";
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+
+the name `PackageCard` is defined multiple times
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:18:18
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |                  ^^^^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useEffect` is defined multiple times
+[00:09:57.060] Browser ERROR   ./app/services/page.tsx:18:10
+Ecmascript file had an error
+  16 | import { Button } from "@/components/ui/button";
+  17 | import "keen-slider/keen-slider.min.css";
+> 18 | import { useRef, useEffect } from "react";
+     |          ^^^^^^
+  19 |
+  20 | type Package = {
+  21 |   name: string;
+
+the name `useRef` is defined multiple times
+[00:10:32.196] Server  LOG      ✓ Compiled in 157ms
+[00:10:33.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:34.104] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:34.104] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/services","route":"/services"}
+[00:10:34.104] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services color: rgb(120, 120, 120) color: inherit {"dp":"/services","o":"http://localhost:3000/services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764236949559}
