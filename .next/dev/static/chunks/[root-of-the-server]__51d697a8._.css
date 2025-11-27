@@ -454,10 +454,6 @@
     padding-block: 0;
   }
 
-  ::-webkit-calendar-picker-indicator {
-    line-height: 1;
-  }
-
   :-moz-ui-invalid {
     box-shadow: none;
   }
@@ -507,7 +503,7 @@
   }
 
   .sr-only {
-    clip-path: inset(50%);
+    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
     width: 1px;
@@ -2617,6 +2613,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 :root {

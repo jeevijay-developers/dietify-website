@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   /* <CHANGE> Updated to health-themed color palette: soft greens, light blues, and warm neutrals */
   --background: oklch(0.98 0 0);
