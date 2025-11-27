@@ -68,15 +68,17 @@ export default function Services() {
               const Icon = service.icon
               return (
                 <SwiperSlide key={i}>
-                  <div className="rounded-2xl border border-white/80 bg-white/95 p-4 text-center shadow-[0_8px_20px_rgba(28,199,141,0.10)] backdrop-blur-sm max-w-xs mx-auto group">
-                    <Icon className={`h-9 w-9 ${service.color} mb-3 group-hover:scale-110 transition-transform`} />
-                    <h3 className="text-base font-semibold text-foreground mb-2">{service.title}</h3>
-                    <p className="text-xs text-foreground/70 mb-4">{service.description}</p>
-                    <Link href="/services">
-                      <Button variant="ghost" className="text-primary hover:bg-primary/10 text-xs px-3 py-1">
-                        Learn More →
-                      </Button>
-                    </Link>
+                  <div className="rounded-2xl border border-white/80 bg-white/95 p-4 shadow-[0_8px_20px_rgba(28,199,141,0.10)] backdrop-blur-sm max-w-xs mx-auto group flex items-start gap-3">
+                    <Icon className={`h-9 w-9 ${service.color} shrink-0 mt-1 group-hover:scale-110 transition-transform`} />
+                    <div className="flex flex-col items-start text-left w-full">
+                      <h3 className="text-base font-semibold text-foreground mb-1">{service.title}</h3>
+                      <p className="text-xs text-foreground/70 mb-3">{service.description}</p>
+                      <Link href="/services">
+                        <Button variant="ghost" className="text-primary hover:bg-primary/10 text-xs px-3 py-1">
+                          Learn More →
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </SwiperSlide>
               )

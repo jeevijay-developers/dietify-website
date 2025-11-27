@@ -46,7 +46,7 @@ export default function Hero() {
             <Button
               size="sm"
               variant="outline"
-              className="w-full min-w-0 px-2 py-2 justify-center border-primary text-primary hover:bg-primary/5 text-xs sm:size-lg sm:min-w-[220px] sm:px-4 sm:py-3 sm:text-base"
+              className="w-full min-w-0 px-2 py-2 justify-center border-primary text-primary hover:bg-primary/5 hover:text-black text-xs sm:size-lg sm:min-w-[220px] sm:px-4 sm:py-3 sm:text-base"
             >
               Services
             </Button>

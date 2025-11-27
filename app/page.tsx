@@ -55,26 +55,25 @@ export default function Home() {
             <div className="flex flex-col gap-8 sm:gap-16 md:flex-row md:items-center">
               <div className="flex-1 min-w-0 flex flex-col justify-center items-center sm:items-start">
                 <h3 className="text-lg font-bold text-foreground mb-2 text-center sm:text-3xl md:text-4xl sm:text-left">Transforming Lives Through Nutrition</h3>
-                <div className="space-y-3 sm:space-y-5">
-                  <p className="mt-2 text-[15px] leading-relaxed text-foreground/80 text-center sm:text-lg sm:text-left">
+                <div className="space-y-3 sm:space-y-5 align-center">
+                  <p className="text-[13px] text-foreground/70 text-balance sm:text-lg ">
                     We work with the vision to ease complications related to diseases, diagnosis, or lifestyle modifications.<br className="block sm:hidden" />
                     Our purpose is to serve nutrition in its best way as preventive care before you may face any complicated health issues.
                   </p>
-                  <p className="text-[15px] leading-relaxed text-foreground/80 text-center sm:text-lg sm:text-left">
+                  <p className="text-[13px] text-foreground/70 text-balance sm:text-lg ">
                     Whether you are managing a chronic condition, looking to lose weight, or simply want to adopt a healthier lifestyle, we guide you every step of the way.
                   </p>
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 gap-3 sm:mt-8 sm:gap-4">
-                  {[
-                    "Certified & Experienced Dieticians",
+                <div className="mt-6 grid grid-cols-2 gap-2 sm:mt-8 sm:gap-4">
+                  {["Certified & Experienced Dieticians",
                     "Science-Based Nutrition Plans",
                     "Personalized Approach to Health",
                     "Ongoing Support & Monitoring",
                   ].map((item) => (
-                    <div key={item} className="flex items-center gap-2 bg-primary/5 rounded-lg px-3 py-2">
-                      <CheckCircle2 className="h-5 w-5 text-primary" />
-                      <span className="text-sm font-medium text-foreground/80">{item}</span>
+                    <div key={item} className="flex items-center gap-2 bg-primary/5 rounded-lg px-2 py-1 sm:px-3 sm:py-2">
+                      <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                      <span className="text-xs sm:text-sm font-medium text-foreground/80">{item}</span>
                     </div>
                   ))}
                 </div>

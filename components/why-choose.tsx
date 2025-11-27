@@ -12,32 +12,32 @@ export default function WhyChoose() {
         <div className="flex flex-col-reverse gap-8 sm:gap-12 md:grid md:grid-cols-2 items-center">
           <div>
             <div className="space-y-5">
-              <div className="flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3">
-                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-base mb-1 text-foreground text-center sm:text-left">Disease-Specific Programs</h3>
-                  <p className="text-[14px] text-foreground/70 text-center sm:text-left">Specialized diet plans for diabetes, PCOS, thyroid, and more</p>
+              <div className="flex gap-3 items-center bg-primary/5 rounded-lg px-3 py-3">
+                <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                <div className="flex flex-col items-start text-left">
+                  <h3 className="font-semibold text-base mb-1 text-foreground text-left">Disease-Specific Programs</h3>
+                  <p className="text-[14px] text-foreground/70 text-left">Specialized diet plans for diabetes, PCOS, thyroid, and more</p>
                 </div>
               </div>
-              <div className="flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3">
-                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-base mb-1 text-foreground text-center sm:text-left">1-on-1 Consultations</h3>
-                  <p className="text-[14px] text-foreground/70 text-center sm:text-left">Direct access to certified dieticians via online video calls</p>
+              <div className="flex gap-3 items-center bg-primary/5 rounded-lg px-3 py-3">
+                <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                <div className="flex flex-col items-start text-left">
+                  <h3 className="font-semibold text-base mb-1 text-foreground text-left">1-on-1 Consultations</h3>
+                  <p className="text-[14px] text-foreground/70 text-left">Direct access to certified dieticians via online video calls</p>
                 </div>
               </div>
-              <div className="flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3">
-                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-base mb-1 text-foreground text-center sm:text-left">Ongoing Support</h3>
-                  <p className="text-[14px] text-foreground/70 text-center sm:text-left">Regular follow-ups and plan adjustments based on your progress</p>
+              <div className="flex gap-3 items-center bg-primary/5 rounded-lg px-3 py-3">
+                <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                <div className="flex flex-col items-start text-left">
+                  <h3 className="font-semibold text-base mb-1 text-foreground text-left">Ongoing Support</h3>
+                  <p className="text-[14px] text-foreground/70 text-left">Regular follow-ups and plan adjustments based on your progress</p>
                 </div>
               </div>
-              <div className="flex gap-3 items-start bg-primary/5 rounded-lg px-3 py-3">
-                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-base mb-1 text-foreground text-center sm:text-left">Practical Meal Plans</h3>
-                  <p className="text-[14px] text-foreground/70 text-center sm:text-left">Easy-to-follow recipes and shopping lists for real-world implementation</p>
+              <div className="flex gap-3 items-center bg-primary/5 rounded-lg px-3 py-3">
+                <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                <div className="flex flex-col items-start text-left">
+                  <h3 className="font-semibold text-base mb-1 text-foreground text-left">Practical Meal Plans</h3>
+                  <p className="text-[14px] text-foreground/70 text-left">Easy-to-follow recipes and shopping lists for real-world implementation</p>
                 </div>
               </div>
             </div>
