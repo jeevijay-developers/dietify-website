@@ -18,59 +18,35 @@
 //     title: "Immunity Boosting",
 //     description: "Antioxidant-rich protocols to strengthen defenses during stress or recovery phases.",
 //     icon: Shield,
-//   },
-//   {
-//     title: "Healthy Aging",
-//     description: "Nourishment strategies that protect bone density, cognition, and long-term vitality.",
-//     icon: Sparkles,
-//   },
-// ]
+	function WhoWeAre() {
+		return (
+			<section className="max-w-3xl mx-auto px-4 py-12">
+				<div className="bg-white rounded-2xl shadow-lg p-6 sm:p-10">
+					<h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4 text-center">Who We Are</h2>
+					<p className="text-base sm:text-lg text-foreground/80 mb-6 text-center">
+						At DietMentor, we specialize in personalized diets for patients managing chronic conditions like <span className="font-semibold">diabetes, hypertension, kidney disorders</span>, and more. We also design preventive diet plans for:
+					</p>
+					<ul className="flex flex-wrap justify-center gap-3 mb-6">
+						<li className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Heart health</li>
+						<li className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Weight management</li>
+						<li className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Immunity boosting</li>
+						<li className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Healthy aging</li>
+					</ul>
+					<p className="text-base sm:text-lg text-foreground/80 mb-8 text-center">
+						Our team of certified nutritionists and dietitians ensures every plan is <span className="font-semibold">evidence-based, practical, and culturally adaptable</span>.
+					</p>
+					<div className="bg-primary/5 rounded-xl p-5">
+						<h3 className="text-xl sm:text-2xl font-bold text-primary mb-2 text-center">Our Vision</h3>
+						<p className="text-base sm:text-lg text-foreground/80 text-center">
+							To make healthy eating simple, accessible, and effective for everyone – whether you are managing a health condition or striving for long-term wellness.
+						</p>
+					</div>
+				</div>
+			</section>
+		);
+	}
 
-// export default function WhoWeAre() {
-//   return (
-//     <section className="bg-linear-to-br from-[#F4FBF8] via-white to-[#EEF5FF] px-2 py-8 sm:px-4 sm:py-24">
-//       <div className="mx-auto max-w-6xl">
-//         <div className="mb-6 text-center sm:mb-16">
-//           <h2 className="text-xl font-bold text-foreground mb-2 text-balance sm:text-4xl sm:mb-4">
-//             Who We <span className="text-primary">Are</span>
-//           </h2>
-//           <p className="text-[13px] text-foreground/70 text-balance sm:text-lg">
-//             Dedicated to delivering personalized nutrition for better health.
-//           </p>
-//         </div>
-//         <div className="grid gap-3 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-//           {/* Mobile: Carousel */}
-//           <div className="block sm:hidden">
-//             <Swiper
-//               spaceBetween={12}
-//               slidesPerView={1}
-//               pagination={{ clickable: true }}
-//               navigation={true}
-//               style={{ paddingBottom: "2rem" }}
-//             >
-//               {focusAreas.map((area) => (
-//                 <SwiperSlide key={area.title}>
-//                   <div className="group rounded-2xl border border-primary/10 bg-white p-5 shadow-[0_10px_30px_rgba(15,90,60,0.08)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(15,90,60,0.14)]">
-//                     <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:scale-105 transition-transform">
-//                       <area.icon className="h-6 w-6" />
-//                     </div>
-//                     <h3 className="text-base font-semibold text-foreground">{area.title}</h3>
-//                     <p className="mt-1 text-[13px] text-foreground/70">{area.description}</p>
-//                   </div>
-//                 </SwiperSlide>
-//               ))}
-//             </Swiper>
-//           </div>
-//           {/* Desktop: Grid */}
-//           <div className="hidden sm:flex gap-8 justify-center items-center py-16">
-//             {focusAreas.map((area) => (
-//               <div
-//                 key={area.title}
-//                 className="w-[260px] bg-white rounded-xl border border-[#e5e7eb] shadow-md flex flex-col items-center py-14 px-6 transition-all duration-300 hover:shadow-lg"
-//               >
-//                 <div className="mb-6 flex items-center justify-center">
-//                   <div className="flex items-center justify-center rounded-full bg-primary/10" style={{ width: 80, height: 80 }}>
-//                     <area.icon className="text-primary" style={{ width: 36, height: 36 }} />
+	export default WhoWeAre;
 //                   </div>
 //                 </div>
 //                 <h3 className="text-lg font-bold text-foreground text-center mb-2">{area.title}</h3>

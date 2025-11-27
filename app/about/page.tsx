@@ -4,6 +4,7 @@ import Link from "next/link"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import WhoWeAre from "@/components/who-we-are"
 
 const checklist = [
   "Certified & Experienced Dieticians",
@@ -91,6 +92,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <WhoWeAre />
 
      
 

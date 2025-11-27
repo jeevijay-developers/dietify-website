@@ -46,8 +46,13 @@ function KeenSliderCarousel({ items }: KeenSliderCarouselProps) {
   return (
     <div ref={sliderRef} className="keen-slider">
       {items.map((pkg, idx) => (
-        <div className="keen-slider__slide" key={idx}>
-          <PackageCard {...pkg} />
+        <div
+          className="keen-slider__slide px-2 flex justify-center"
+          key={idx}
+        >
+          <div className="w-full max-w-xs sm:max-w-none">
+            <PackageCard {...pkg} />
+          </div>
         </div>
       ))}
     </div>
@@ -142,17 +147,17 @@ export default function Services() {
     <>
       <Navigation />
       <main>
-        <section className="py-16 px-4 bg-linear-to-br from-background to-secondary/5">
+        <section className="py-10 px-2 sm:py-16 sm:px-4 bg-linear-to-br from-background to-secondary/5">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-foreground mb-6 text-balance text-center">Our Packages & Programs</h1>
-            <p className="text-xl text-foreground/70 text-balance text-center">Choose the perfect program for your health goals</p>
+            <h1 className="text-2xl font-extrabold text-primary mb-3 sm:text-5xl sm:mb-6 text-balance text-center">Our Packages & Programs</h1>
+            <p className="text-[13px] text-foreground/70 text-balance sm:text-lg">Choose the perfect program for your health goals</p>
           </div>
         </section>
 
         {packages.map((section, i) => (
-          <section key={i} className={`py-16 px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+          <section key={i} className={`py-10 px-2 sm:py-16 sm:px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl font-bold text-foreground mb-12 text-balance text-center">{section.category}</h2>
+              <h2 className="text-lg font-bold text-primary mb-8 sm:text-3xl sm:mb-12 text-balance text-center">{section.category}</h2>
               {/* Carousel for mobile, grid for desktop */}
               <div className="block md:hidden">
                 <KeenSliderCarousel items={section.packages} />
@@ -166,9 +171,9 @@ export default function Services() {
           </section>
         ))}
 
-        <section className="py-16 px-4 bg-primary text-primary-foreground">
+        <section className="py-10 px-2 sm:py-16 sm:px-4 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6 text-balance">Ready to Choose Your Program?</h2>
+            <h2 className="text-lg font-bold mb-4 sm:text-3xl sm:mb-6 text-balance">Ready to Choose Your Program?</h2>
             <Link href="/book">
               <Button size="lg" variant="secondary">
                 Book Appointment Now
