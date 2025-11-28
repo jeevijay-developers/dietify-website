@@ -1472,6 +1472,10 @@
     color: var(--color-blue-500);
   }
 
+  .text-destructive {
+    color: var(--destructive);
+  }
+
   .text-foreground {
     color: var(--foreground);
   }
@@ -1997,6 +2001,10 @@
 
   .disabled\:opacity-50:disabled {
     opacity: .5;
+  }
+
+  .disabled\:opacity-60:disabled {
+    opacity: .6;
   }
 
   .has-\[\>svg\]\:px-2\.5:has( > svg) {

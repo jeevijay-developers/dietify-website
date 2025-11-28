@@ -106,7 +106,7 @@ function Navigation() {
             href: "/about"
         },
         {
-            label: "Services",
+            label: "Plan",
             href: "/services"
         },
         {
