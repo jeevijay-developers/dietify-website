@@ -1,15 +1,17 @@
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
-import BookingForm from "@/components/booking-form"
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
+import BookingForm from "@/components/booking-form";
 
 export default function BookAppointment() {
   return (
     <>
       <Navigation />
       <main>
-        <section className="py-16 px-4 bg-gradient-to-br from-background to-secondary/5">
+        <section className="py-16 px-4 bg-linear-to-br from-background to-secondary/5">
           <div className="max-w-2xl mx-auto">
-            <h1 className="text-4xl font-bold text-foreground mb-4 text-center text-balance">Book Your Appointment</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-4 text-center text-balance">
+              Book Your Appointment
+            </h1>
             <p className="text-lg text-foreground/70 text-center text-balance">
               Let's get started on your personalized nutrition journey
             </p>
@@ -24,5 +26,5 @@ export default function BookAppointment() {
       </main>
       <Footer />
     </>
-  )
+  );
 }
