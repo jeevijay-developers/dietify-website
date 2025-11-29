@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/dietmentor-logo.png"
+                src="/litelogo.png"
                 width={180}
                 height={52}
                 alt="DietMentor nutrition and diet services"
