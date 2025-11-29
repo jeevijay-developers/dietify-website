@@ -14,6 +14,8 @@ const stats = [
 
 export default function Hero() {
   return (
+    <>
+      <div className="pt-[60px]"></div>
     <section className="relative overflow-hidden bg-linear-to-br from-[#EAF7F1] via-white to-[#E7F0FF] px-4 py-16 sm:py-20 lg:py-24">
       <div className="pointer-events-none absolute -right-10 top-10 h-72 w-72 rounded-full bg-primary/20 blur-[120px]" />
       <div className="pointer-events-none absolute -left-20 bottom-0 h-112 w-md rounded-full bg-secondary/30 blur-[160px]" />
@@ -97,5 +99,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </>
   )
 }

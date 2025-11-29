@@ -146,7 +146,7 @@ export default function Services() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="pt-[60px]">
         <section className="py-10 px-2 sm:py-16 sm:px-4 bg-linear-to-br from-background to-secondary/5">
           <div className="max-w-6xl mx-auto text-center">
             <h1 className="text-2xl font-extrabold text-primary mb-3 sm:text-5xl sm:mb-6 text-balance text-center">Our Packages & Programs</h1>
