@@ -11,7 +11,7 @@ export default function CtaBanner() {
           Book your first consultation with our certified dieticians today
         </p>
         <Link href="/book">
-          <Button size="lg" variant="secondary" className="flex items-center gap-2 mx-auto">
+          <Button size="lg" variant="secondary" className="flex items-center gap-2 mx-auto text-black bg-white font-semibold hover:bg-gray-300 cursor-pointer">
             Book Appointment
             <ArrowRight className="h-4 w-4" />
           </Button>

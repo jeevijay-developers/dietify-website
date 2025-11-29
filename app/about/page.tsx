@@ -40,7 +40,7 @@ export default function AboutPage() {
   return (
     <>
       <Navigation />
-      <main className="bg-white">
+      <main className="bg-white pt-[60px]">
       
 
       <section className="px-2 py-10 sm:px-4 sm:py-20">
@@ -104,7 +104,7 @@ export default function AboutPage() {
             Schedule a consultation to receive a customized plan and continuous support from our certified dieticians.
           </p>
           <Link href="/book" className="mt-8 inline-flex">
-            <Button size="lg" variant="secondary">
+            <Button size="lg" variant="secondary" className="text-black bg-white font-semibold hover:bg-gray-300 cursor-pointer">
               Book Your Appointment
             </Button>
           </Link>

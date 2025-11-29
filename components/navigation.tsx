@@ -14,7 +14,7 @@ export default function Navigation() {
     { label: "About", href: "/about" },
     { label: "Plan", href: "/services" },
     { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/#contact" },
+    { label: "Contact", href: "/book" },
   ]
 
   return (

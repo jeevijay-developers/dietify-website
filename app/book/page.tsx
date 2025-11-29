@@ -6,7 +6,7 @@ export default function BookAppointment() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="pt-[60px]">
         <section className="py-16 px-4 bg-linear-to-br from-background to-secondary/5">
           <div className="max-w-2xl mx-auto">
             <h1 className="text-4xl font-bold text-foreground mb-4 text-center text-balance">

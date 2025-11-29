@@ -7,22 +7,11 @@ import PackageCard from "@/components/package-card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import "keen-slider/keen-slider.min.css";
-import { useRef, useEffect } from "react";
-
-type Package = {
-  name: string;
-  duration: string;
-  price: string;
-  includes: string[];
-};
-
-type Section = {
-  category: string;
-  packages: Package[];
-};
+import { useRef, useEffect, useState } from "react";
+import { dietPlanAPI, type DietPlan } from "@/lib/api";
 
 type KeenSliderCarouselProps = {
-  items: Package[];
+  items: DietPlan[];
 };
 
 function KeenSliderCarousel({ items }: KeenSliderCarouselProps) {
@@ -45,13 +34,19 @@ function KeenSliderCarousel({ items }: KeenSliderCarouselProps) {
   }, []);
   return (
     <div ref={sliderRef} className="keen-slider">
-      {items.map((pkg, idx) => (
+      {items.map((plan) => (
         <div
           className="keen-slider__slide px-2 flex justify-center"
-          key={idx}
+          key={plan._id}
         >
           <div className="w-full max-w-xs sm:max-w-none">
-            <PackageCard {...pkg} />
+            <PackageCard 
+              title={plan.title}
+              duration={plan.duration}
+              customDuration={plan.customDuration}
+              pricing={plan.pricing}
+              features={plan.features}
+            />
           </div>
         </div>
       ))}
@@ -60,89 +55,27 @@ function KeenSliderCarousel({ items }: KeenSliderCarouselProps) {
 }
 
 export default function Services() {
-  const packages: Section[] = [
-    {
-      category: "Weight Loss",
-      packages: [
-        {
-          name: "1-Month Program",
-          duration: "1 month",
-          price: "₹4,999",
-          includes: ["Initial consultation", "Custom meal plan", "Weekly check-ins", "Recipe suggestions"],
-        },
-        {
-          name: "3-Month Program",
-          duration: "3 months",
-          price: "₹12,999",
-          includes: [
-            "Initial consultation",
-            "Custom meal plan",
-            "Bi-weekly check-ins",
-            "Grocery lists",
-            "Progress tracking",
-          ],
-        },
-        {
-          name: "6-Month Program",
-          duration: "6 months",
-          price: "₹22,999",
-          includes: ["All 3-month benefits", "Monthly reviews", "Fitness integration", "Lifestyle coaching"],
-        },
-      ],
-    },
-    {
-      category: "Disease Management",
-      packages: [
-        {
-          name: "Diabetes Management",
-          duration: "3 months",
-          price: "₹8,999",
-          includes: ["Blood sugar tracking", "Carb management", "Lab result analysis", "Medication coordination"],
-        },
-        {
-          name: "PCOS/PCOD Plan",
-          duration: "3 months",
-          price: "₹9,999",
-          includes: ["Hormonal assessment", "PCOS-specific recipes", "Supplement guidance", "Stress management"],
-        },
-        {
-          name: "Thyroid Diet Plan",
-          duration: "3 months",
-          price: "₹7,999",
-          includes: ["TSH optimization", "Iodine management", "Metabolism boost", "Energy management"],
-        },
-      ],
-    },
-    {
-      category: "Specialized Programs",
-      packages: [
-        {
-          name: "Gut Health Program",
-          duration: "2 months",
-          price: "₹7,999",
-          includes: [
-            "Microbiome assessment",
-            "Probiotic guidance",
-            "Digestion optimization",
-            "Food sensitivity testing",
-          ],
-        },
-        {
-          name: "Heart-Friendly Diet",
-          duration: "3 months",
-          price: "₹8,999",
-          includes: ["Cholesterol management", "Sodium reduction", "Heart-healthy recipes", "Blood pressure tracking"],
-        },
-        {
-          name: "Custom Diet Plan",
-          duration: "Flexible",
-          price: "₹5,999/month",
-          includes: ["Personalized assessment", "Flexible duration", "Custom goals", "Ongoing support"],
-        },
-      ],
-    },
-  ];
-        // ...existing code for packages array...
+  const [dietPlans, setDietPlans] = useState<DietPlan[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchDietPlans() {
+      try {
+        setLoading(true);
+        setError(null);
+        const data = await dietPlanAPI.getAllDietPlans();
+        setDietPlans(data);
+      } catch (err) {
+        setError('Failed to load diet plans. Please try again later.');
+        console.error('Error fetching diet plans:', err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchDietPlans();
+  }, []);
   return (
     <>
       <Navigation />
@@ -154,28 +87,59 @@ export default function Services() {
           </div>
         </section>
 
-        {packages.map((section, i) => (
-          <section key={i} className={`py-10 px-2 sm:py-16 sm:px-4 ${i % 2 === 0 ? "bg-background" : "bg-secondary/5"}`}>
+        {loading ? (
+          <section className="py-20 px-4">
+            <div className="flex items-center justify-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+            </div>
+          </section>
+        ) : error ? (
+          <section className="py-20 px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <p className="text-red-500 mb-4">{error}</p>
+              <button 
+                onClick={() => window.location.reload()} 
+                className="text-primary hover:text-primary/80 underline"
+              >
+                Try Again
+              </button>
+            </div>
+          </section>
+        ) : dietPlans.length === 0 ? (
+          <section className="py-20 px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <p className="text-foreground/70 text-lg">No diet plans available yet. Check back soon!</p>
+            </div>
+          </section>
+        ) : (
+          <section className="py-10 px-2 sm:py-16 sm:px-4 bg-background">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-lg font-bold text-primary mb-8 sm:text-3xl sm:mb-12 text-balance text-center">{section.category}</h2>
+              <h2 className="text-lg font-bold text-primary mb-8 sm:text-3xl sm:mb-12 text-balance text-center">Available Diet Plans</h2>
               {/* Carousel for mobile, grid for desktop */}
               <div className="block md:hidden">
-                <KeenSliderCarousel items={section.packages} />
+                <KeenSliderCarousel items={dietPlans} />
               </div>
               <div className="hidden md:grid md:grid-cols-3 gap-8">
-                {section.packages.map((pkg, j) => (
-                  <PackageCard key={j} {...pkg} />
+                {dietPlans.map((plan) => (
+                  <PackageCard 
+                    key={plan._id}
+                    title={plan.title}
+                    duration={plan.duration}
+                    customDuration={plan.customDuration}
+                    pricing={plan.pricing}
+                    features={plan.features}
+                  />
                 ))}
               </div>
             </div>
           </section>
-        ))}
+        )}
 
         <section className="py-10 px-2 sm:py-16 sm:px-4 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-lg font-bold mb-4 sm:text-3xl sm:mb-6 text-balance">Ready to Choose Your Program?</h2>
             <Link href="/book">
-              <Button size="lg" variant="secondary">
+              <Button size="lg" variant="secondary" className="text-black bg-white font-semibold hover:bg-gray-300 cursor-pointer" >
                 Book Appointment Now
               </Button>
             </Link>
