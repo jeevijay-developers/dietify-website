@@ -45,7 +45,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="mb-6 text-center sm:mb-16">
           <h2 className="text-xl font-bold text-foreground mb-2 text-balance sm:text-4xl sm:mb-4">
