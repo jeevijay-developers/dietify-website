@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { Star } from "lucide-react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Pagination } from "swiper/modules"
+import { Star } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
-import "swiper/css"
-import "swiper/css/pagination"
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Testimonials() {
   const testimonials = [
@@ -72,7 +72,7 @@ export default function Testimonials() {
       rating: 5,
       initial: "M",
     },
-  ]
+  ];
 
   return (
     <section className="bg-secondary/10 px-4 py-24">
@@ -87,13 +87,12 @@ export default function Testimonials() {
         </div>
 
         <Swiper
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay]}
           spaceBetween={24}
           slidesPerView={1}
           slidesPerGroup={1}
           grabCursor
           loop
-          pagination={{ clickable: true }}
           autoplay={{ delay: 4500, disableOnInteraction: false }}
           breakpoints={{
             640: { slidesPerView: 1.4, slidesPerGroup: 1 },
@@ -104,19 +103,26 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, i) => (
             <SwiperSlide key={testimonial.name + i}>
-              <div className="group h-full rounded-3xl border border-white/60 bg-white/90 p-8 shadow-[0_25px_60px_rgba(16,83,60,0.1)] backdrop-blur transition-all duration-500 transform-gpu hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_45px_100px_rgba(16,83,60,0.18)]">
+              <div className="group h-full rounded-3xl border border-white/60 bg-white/90 p-8 transition-all duration-500 transform-gpu">
                 <div className="mb-4 flex gap-1">
                   {Array.from({ length: testimonial.rating }).map((_, j) => (
-                    <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={j}
+                      className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
-                <p className="mb-6 text-lg text-foreground/80 italic">“{testimonial.text}”</p>
+                <p className="mb-6 text-lg text-foreground/80 italic">
+                  “{testimonial.text}”
+                </p>
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
                     {testimonial.initial}
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="font-semibold text-foreground">
+                      {testimonial.name}
+                    </p>
                     <p className="text-sm text-primary">{testimonial.role}</p>
                   </div>
                 </div>
@@ -126,5 +132,5 @@ export default function Testimonials() {
         </Swiper>
       </div>
     </section>
-  )
+  );
 }
